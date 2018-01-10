@@ -320,37 +320,32 @@
                   </div>            
                 </form>
                 -->
-                <form id="contactForm" action="https://formspree.io/popov.kai@gmail.com" method="POST">
+                <form action="https://formspree.io/popov.kai@gmail.com" method="POST">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
                       </div>                                 
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="_replyto" required data-error="Please enter your email">
+                        <input type="text" placeholder="Your Email" class="form-control" name="email" required data-error="Please enter your email">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div>
                     <div class="col-md-12">
                       <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required name="message"></textarea>
+                        <textarea class="form-control" placeholder="Your Message" rows="8" data-error="Write your message" required name="message"></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <button class="btn btn-common" type="submit">Send Message</button>
+                        <div class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
                     </div>
                   </div>            
-                </form>
-                <form method="POST" action="http://formspree.io/popov.kai@gmail.com">
-                  <input type="email" name="email" placeholder="Your email">
-                  <textarea name="message" placeholder="Your message"></textarea>
-                  <button type="submit">Send</button>
                 </form>
               </div>
             </div>

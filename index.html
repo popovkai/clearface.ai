@@ -8,7 +8,7 @@
     <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>ClearFace - AI-Enabled App to Help You Fight Your Acne Problem</title>
+    <title>ClearFace - Help You Fight Acne Problem</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -90,11 +90,9 @@
         <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="700ms" data-wow-delay="0.1s">Help You Fight Your Acne Problem !</h1>
-              <h3 class="lead wow fadeIn" data-wow-duration="700ms" data-wow-delay="200ms">AI-Enabled App for Skin Quality Analysis</h3>
-              <!--
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a>
-              -->
+              <h1 class="wow fadeInDown" data-wow-duration="700ms" data-wow-delay="0.1s">Help You Fight Acne Problem !</h1>
+              <h3 class="lead wow fadeIn" data-wow-duration="700ms" data-wow-delay="200ms">AI-Enabled Skin Quality Analysis</h3>
+              <!-- a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a -->
               <br>
               <a href="https://itunes.apple.com/us/app/cfu-scope/id1104871540?ls=1&mt=8"><img class="u-max-full-width" src="img/appStore.png"></a>
 
@@ -151,13 +149,21 @@
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
           ClearFace builds the latest AI technology on iPhone.
           </p>
-          <img src="img/technology/acneNet_arch.png" alt="">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <img src="img/technology/acneNet_arch.png" alt="">
+            </div>
+          </div>
 
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
           ClearFace builds the latest AI technology on iPhone.
           </p>
 
-          <img src="img/technology/acneNet_r.png" alt="">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <img src="img/technology/acneNet_r.png" alt="">
+            </div>
+          </div>
 
         </div>
         <div class="row">
@@ -259,8 +265,8 @@
       <div class="contact-form">
         <div class="container">
           <div class="row">     
-            <div class="section-header">          
-            <!-- div class="col-lg-6 col-sm-6 col-xs-12"-->
+            <!-- div class="section-header" -->
+            <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-us">
                 <h3>Contact</h3>
                 <div class="contact-address">
@@ -283,9 +289,9 @@
                 </div>
               </div>
             </div>     
-            <!--
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
+                <!--
                 <form id="contactForm">
                   <div class="row">
                     <div class="col-md-12">
@@ -313,9 +319,41 @@
                     </div>
                   </div>            
                 </form>
+                -->
+                <form id="contactForm" action="https://formspree.io/popov.kai@gmail.com" method="POST">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>                                 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="_replyto" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required name="message"></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button text-center">
+                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                  </div>            
+                </form>
+                <form method="POST" action="http://formspree.io/popov.kai@gmail.com">
+                  <input type="email" name="email" placeholder="Your email">
+                  <textarea name="message" placeholder="Your message"></textarea>
+                  <button type="submit">Send</button>
+                </form>
               </div>
             </div>
-            -->
           </div>
         </div>
       </div>           
